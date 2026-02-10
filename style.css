@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1588797937262-61e3bc451add?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover; /* your image */
+    font-family: Raleway, playfair display,;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 400px;
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.4); /* 40% opaque = 60% transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    background: rgba(255, 255, 255, 0.4); 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-radius: 25px;      
+    border: 1px solid #ccc; 
+    font-size: 14px;
+}
+
+
+.input-group input:focus {
+    border: 2px solid #f071b0;  
+    background: rgba(255, 255, 255, 0.7); 
+    outline: none;               
+}
+
+.input-group input {
+    transition: 0.3s;   
+}
+
+
+.form button {
+    width: 80px;               
+    padding: 10px 0;  
+    display: block;        
+    margin: 30px auto;         
+    background: #fa3397;
+    color: white;
+    border: none;
+    border-radius: 50px;      
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    background: #dd1885;
+    transform: scale(1.05);
+}
+
+.form p {
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.form p a {
+    color: #dd1885;
+    text-decoration: none;
+    
+}
+
+.form p a:hover {
+    text-decoration: underline;
+    
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .form input, .form button {
+        padding: 12px;
+    }
+}
